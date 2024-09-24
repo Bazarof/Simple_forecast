@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sunny_day"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:paddingTop="50dp"
+            android:gravity="center"
+            android:text="33°"
+            android:shadowColor="#404040"
+            android:shadowRadius="150"
+            android:textColor="#ffffff"
+            android:textSize="80sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="70dp"
+                    android:gravity="top|end"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="6dp"
+                    android:textSize="20sp"
+                    android:shadowColor="#5d5d5d"
+                    android:shadowRadius="15"
+                    android:textColor="#ffffff"
+                    android:text="Máxima: 34°" />
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="70dp"
+                    android:gravity="top|start"
+                    android:paddingTop="12dp"
+                    android:paddingStart="6dp"
+                    android:textSize="20sp"
+                    android:shadowColor="#5d5d5d"
+                    android:shadowRadius="15"
+                    android:textColor="#ffffff"
+                    android:text="Mínima: 27°"/>
+
+            </TableRow>
+
+            <!--Card pronostico por hora-->
+            <LinearLayout
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/card_bg"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:textColor="#99ffffff"
+                    android:paddingTop="10dp"
+                    android:paddingStart="20dp"
+                    android:text="PRONÓSTICO POR HORA"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="1dp"
+                    android:background="#99ffffff"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:paddingTop="5dp"
+                    android:layout_height="100dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/hourTempList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

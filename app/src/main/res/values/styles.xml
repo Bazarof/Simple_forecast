@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Card view Vertical Layout Item-->
+    <style name="HourTemperatureView">
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="HourTemperatureView.LastItem">
+        <item name="android:titleMarginEnd">20dp</item>
+    </style>
+
+    <!--TextView for Vertical Layout Item-->
+    <style name="VerticalLayoutText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="VerticalLayoutText.LastItem">
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <!--ImageView style for weather icon-->
+    <style name="WeatherIconStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+</resources>

@@ -118,9 +118,10 @@
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#ffffffff"
         android:text="Pronostico de la semana"
+        android:textSize="20dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="250dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

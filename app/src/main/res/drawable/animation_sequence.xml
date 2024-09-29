@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item android:drawable="@drawable/cloud_1" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_2" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_3" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_4" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_5" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_6" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_7" android:duration="200"/>
+    <item android:drawable="@drawable/cloud_8" android:duration="200"/>
+
+</animation-list>

@@ -61,9 +61,9 @@ public class MainActivity extends AppCompatActivity {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent go = new Intent(view.getContext(), WeekTemperatureActivity.class);
-
-                startActivity(go);
+                startActivity(
+                        new Intent(view.getContext(), WeekTemperatureActivity.class)
+                );
             }
         });
 
